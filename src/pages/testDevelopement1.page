@@ -10,7 +10,7 @@
             </apex:panelGrid>
             <apex:pageBlockSection >
                 <apex:dataList var="c" value="{!cases}" id="list">
-                
+                {!c}
                 </apex:dataList>
                 <apex:pageBlockTable value="{!cases}" var="c"><apex:column value="{!c.subject}" headerValue=""/></apex:pageBlockTable>
                 <apex:commandButton value="Next" action="{!next}"/>
