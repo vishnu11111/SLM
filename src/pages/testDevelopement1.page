@@ -4,6 +4,7 @@
             <apex:panelGrid columns="2">
                 <apex:outputLabel value="View:"/>
                 <apex:selectList value="{!filterId}" size="1">
+                <apex:selectList value="{!filterId}" size="1">
                     <apex:actionSupport event="onchange" rerender="list"/>
                     <apex:selectOptions value="{!listviewoptions}"/>
                 </apex:selectList>
